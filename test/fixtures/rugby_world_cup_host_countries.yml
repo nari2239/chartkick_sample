@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  total_attendance: 1
+  matches: 1
+  stadium_capacity: 1
+  held_at: 2020-12-16 00:52:24
+
+two:
+  name: MyString
+  total_attendance: 1
+  matches: 1
+  stadium_capacity: 1
+  held_at: 2020-12-16 00:52:24
