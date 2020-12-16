@@ -2,11 +2,8 @@
 
 <h1>Rugby World Cup Host Countries</h1>
 
-<%= column_chart RugbyWorldCupHostCountry.pluck(:held_at, :total_attendance),
-                 id: 'total-attendance-chart',
-                 width: '400px',
-                 height: '500px',
-                 colors: ['#b00'] %>
+<%= column_chart @rugby_world_cup_host_countries.chart_date, xtitle: "開催日", ytitle: "試合数", width: "600px", height: "200px" %>
+
 <table>
   <thead>
     <tr>
