@@ -2,7 +2,8 @@
 
 <h1>Rugby World Cup Host Countries</h1>
 
-<%= column_chart @rugby_world_cup_host_countries.chart_date, xtitle: "開催日", ytitle: "試合数", width: "600px", height: "200px" %>
+<%# <%= column_chart @rugby_world_cup_host_countries.chart_date, xtitle: "開催日", ytitle: "試合数", width: "600px", height: "200px" %> 
+<%= column_chart RugbyWorldCupHostCountry.limit(4).order("held_at DESC").pluck('held_at', 'matches') %>
 
 <table>
   <thead>
